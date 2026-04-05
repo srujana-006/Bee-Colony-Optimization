@@ -1,0 +1,10 @@
+# Bee-Colony-Optimization
+Ants and Bees are the perfect animals to observe if you have time to kill and want to learn how animals survive as a community. This repository explores BCO algorithm, that is heavily inspired by the bee-haviour of swarm to solve complex numeric problems.
+The Bee Colony Optimization algorithm mimics the behaviour of a colony of bees find the best food source. Three types of bees accomplish this- employee bee, onlooker bee and scout bee. 
+Bees can communicate with fellow bees via waggle dance, pheromones and othe methods. They can map out food sources and retain information upto many days. The employed bees exploit already know food sources, that are known to be rewarding. 
+these bees share the quality/qunatity of the food source with the onlooker bees, this can be seen as a form of functional real time feedback. These onlooker bees try to find new food sources based on the dance performed by the employed bees in the hive. stronger the dance, more probable is the new food source. 
+Everything runs out after sometime, even nectar. When a food source is no longer providing results, after a fixed number of attempts, these sources are abandoned and the bees become scout bees. They start looking for random potential food sources here on out. 
+The algorithm imitates this exact thing; A bunch of random solutions are initialized. A bunch of employees, onlookers and scouts are initialized. Bees randomly pick a food source/solution. Some might be good, some terrible. These bees also explore locally, so a deviation from the solution is taken in order to explore. The outcomes of these solutions are weighed and a greedy selection is deployed; pick the better solutionn based on the probability of the source being effective. 
+After a few runs if a solution is giving unappreciated results, abandonthe solution. 
+In recent times of energy crisis, what better application to choose than energy optimization? The implementation is to find a solution for the energy management system given an energy demand, how much energy to pull from the grid, battery and solar power generator/
+This is a sweet balance of exploration-exploitation. 
